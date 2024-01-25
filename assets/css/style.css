@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter";
+}
+
+
+#main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+}
+
+#btn-dark-mode-toggle {
+  width: 50px;
+  height: 50px;
+  background: var(--white);
+
+  border-radius: 50%;
+  border: none;
+
+  position: absolute;
+  top: 15px;
+  right: 50px;
+}
+
+svg {
+  color: var(--black);
+  width: 18px;
+  height: 18px;
+}
+
+#main > form {
+  width: 40vw;
+  height: 37vw;
+
+  background: rgba(215, 215, 215, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.6px);
+  -webkit-backdrop-filter: blur(2.6px);
+  border: 1px solid rgba(215, 215, 215, 0.38);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+}
+
+form > h1 {
+  position: relative;
+  margin-top: -8vw;
+  margin-bottom: 2vw;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 10px;
+}
+
+.input-field > input, .password-field > input {
+  background: rgba(215, 215, 215, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.6px);
+  -webkit-backdrop-filter: blur(2.6px);
+  border: 1px solid rgba(215, 215, 215, 0.38);
+  border-radius: 5px;
+
+  width: 20vw;
+  height: 3vw;
+
+  color: #fff;
+  padding-left: 10px;
+
+  outline: 1px solid rgba(240, 248, 255, 0.513);
+}
+
+.password-field i {
+  margin: 0;
+  position: absolute;
+
+  top: 14vw;
+  right: 11vw;
+
+  color:  rgb(91, 91, 91);
+  font-size: 1.2rem;
+
+
+  cursor: pointer;
+}
+
+
+input::placeholder {
+  color: #ffffff8b;
+}
+
+#remember-forgot {
+  margin-top: 7px;
+  margin-bottom: 2.5vw;
+
+  scale: 0.9;
+}
+
+#remember-forgot > input {
+  width: 20px;
+
+  outline: none;
+}
+
+#remember-forgot > label,
+a {
+  font-size: 0.9rem;
+  margin-left: -5px;
+}
+
+#remember-forgot > a {
+  color: aliceblue;
+
+  margin-left: 10px;
+}
+
+form > #login {
+  width: 20vw;
+  height: 3vw;
+
+  color: #000;
+  font-family: "Inter";
+  font-weight: 500;
+
+  background: #fff;
+  border: 1px solid rgba(215, 215, 215, 0.38);
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+form > h2 {
+  margin-bottom: -4vw;
+  margin-top: 2vw;
+
+  font-size: 1.1rem;
+
+  font-weight: 500;
+}
+
+form > h2 > a {
+  color: aliceblue;
+
+  margin-left: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  #main > form {
+    width: 69vw;
+    height: 40vh;
+
+    margin-top: -70vw;
+  }
+
+  form > h1 {
+    font-size: 1.5rem;
+  }
+
+  form > .input-field > input, .password-field > input {
+    width: 35vw;
+    height: 3vh;
+  }
+
+  .password-field > i {
+    top: 33vw;
+    left: 45vw;
+
+    font-size: 1rem;
+  }
+
+  #remember-forgot {
+    width: 125%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  #remember-forgot > label, a {
+    font-size: 0.8rem;
+  }
+
+  form > #login {
+    width: 30vw;
+    height: 3.5vh;
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+  }
+
+
+  form > h2 {
+    font-size: 1rem;
+  }
+}
